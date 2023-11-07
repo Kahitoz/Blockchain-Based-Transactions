@@ -4,6 +4,7 @@ import "./stylesheets/custom-components.css";
 import "./stylesheets/alignments.css";
 import "./stylesheets/theme.css";
 import "./stylesheets/layout.css";
+import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -12,7 +13,7 @@ function App() {
     <div >
          <BrowserRouter>
          <Routes>
-          <Route path="/login" element={<Login/>}/>,
+          <Route path="*" element={<Login/>}/>,
           <Route path="/register" element={<Register/>}/>
        
          </Routes>
