@@ -11,7 +11,13 @@ const Login = () => {
   }
 
   const HandleOnclickButtonChange = async(value)=>{
-    await Log_in_user(value);
+    const data = await Log_in_user(value);
+    if(data>10){
+      navigate('/dashboard')
+    }
+    else{
+      navigate('/register')
+    }
     
   }
   return (
@@ -24,16 +30,14 @@ const Login = () => {
         <Form layout="vertical">
           <Row gutter={16}>
             <Col span={24}>
-              <Form.Item label="PRIVATE-KEY" name="PRIVATE-KEY">
                 <input type="text" 
                 value = {key}
                 placeholder="Your Private Key"
                 onChange={handleKeyChange}/>
-              </Form.Item>
             </Col>
           </Row>
 
-          <button className="primary-contained-btn w-100" type="submit" onClick={()=>HandleOnclickButtonChange(key)}>
+          <button className="primary-contained-btn w-100 cursor-pointer" type="submit" onClick={()=>HandleOnclickButtonChange(key)}>
             Login
           </button>
           <h1
