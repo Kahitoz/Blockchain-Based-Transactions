@@ -20,3 +20,4 @@ def get_account(account: str):
     data = account.strip()
     info = get_account_details(data)
     return info
+
