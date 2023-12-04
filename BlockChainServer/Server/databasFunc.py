@@ -29,8 +29,7 @@ def get_sercet_key(key):
     else:
         document_data =  document_ref.get().to_dict()
         account_value = document_data.get("account")
-        message.append({"account": account_value})
-
+        message.append({"account": account_value})     
     return message
 
 def get_account_details(account_number):
@@ -43,5 +42,3 @@ def get_account_details(account_number):
     info.append({"name":name, "balance":balance})
     print(info)
     return info
-
-get_account_details("5SbcyUWYVpY1v3sGCQUw")
