@@ -1,7 +1,7 @@
 :root {
     --primary: #9b44bb;
-    --secondary: #00bac0;
-    --tertiary : #410303e4;
+    --secondary: #f31974;
+    --tertiary : #e08fb1;
     --gradient: linear-gradient(to right, var(--primary), var(--secondary));
   }
 
