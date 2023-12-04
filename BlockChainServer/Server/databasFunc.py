@@ -40,5 +40,4 @@ def get_account_details(account_number):
     name = document_data.get("Name")
     balance = document_data.get("Balance")
     info.append({"name":name, "balance":balance})
-    print(info)
     return info
