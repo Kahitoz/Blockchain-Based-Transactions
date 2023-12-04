@@ -11,11 +11,12 @@ app.add_middleware(
 
 @app.get("/get_secret/{key}")
 def get_secret(key: str):
-    print(key)
-    message = get_sercet_key(key)
+    data = key.strip()
+    message = get_sercet_key(data)
     return message
 
 @app.get("/get_account_info/{account}")
 def get_account(account: str):
-    info = get_account_details(account)
+    data = account.strip()
+    info = get_account_details(data)
     return info
