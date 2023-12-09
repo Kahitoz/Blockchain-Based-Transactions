@@ -1,3 +1,6 @@
 zvenv
 BlockChainServer\Server\blockchain-transaction-firebase-adminsdk-3ovuq-ae4fb8dc33.json
 **venvdb
+**.pyc
+**.DS_Store
+cred.py
